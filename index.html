@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+    <style>
+        body {
+            
+            text-align: center;
+        }
+        
+        .karachi {
+            margin: 20px 0;
+            font-size: 22px;
+        }
+
+        h1 img {
+            max-width: 100%;
+        }
+
+
+
+        figure img {
+            width: 70%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .recipe-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            
+            margin: 20px auto;
+            max-width: 80%;
+        }
+
+        .recipe-row img {
+            width: 120px;
+            height: 120px;
+            border-radius: 12px;
+        }
+
+        
+        @media (max-width: 768px) {
+            figure img {
+                width: 90%;
+            }
+
+            .recipe-row img {
+                width: 90px;
+                height: 90px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .recipe-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .recipe-row img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <h1>
+        <img src="s1.png" alt="From A to Zucchini">
+    </h1>
+
+    
+    <figure>
+        <img src="s4.jpeg" alt="Chocolate Islands">
+        <figcaption>This recipe for individual chocolate cakes is so simple and so delectable!</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="s5.jpeg" alt="Chocolate Islands">
+        <figcaption>This recipe for individual chocolate cakes is so simple and so delectable!</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="s6.jpeg" alt="Chocolate Islands">
+        <figcaption>This recipe for individual chocolate cakes is so simple and so delectable!</figcaption>
+    </figure>
+
+    <h4 class="karachi">More Recipes:</h4>
+    
+    <div class="recipe-row">
+        <img src="s7.jpeg" alt="Lemon Posset">
+        <img src="s8.jpeg" alt="Roasted Brussel Sprouts">
+        <img src="s9.jpeg" alt="Zucchini Cake">
+    </div>
+
+</body>
+</html>
